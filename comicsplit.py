@@ -6,8 +6,8 @@ import zipfile
 new_index = 1
 prefix = 'kindle_'
 def split(filename):
-    indexL = "%05d" % (2 * new_index)
-    indexR = "%05d" % (2 * new_index - 1)
+    indexL = "%03d" % (2 * new_index)
+    indexR = "%03d" % (2 * new_index - 1)
     # print indexL, indexR
 
     img = Image.open(filename)
